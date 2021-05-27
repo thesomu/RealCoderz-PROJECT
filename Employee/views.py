@@ -95,6 +95,10 @@ def update(request):
     # if form.is_valid():
     #     form.save()
     else:
+        if countName < 1:
+            messages.error(request, 'Name should have first and last name')
+        if countAddress < 2:
+            messages.error(request, 'Address should have society, city and pin code')
         employee = empTable.objects.get(id=id2)
         return render(request, 'Update.html', {'employee': employee})
 
