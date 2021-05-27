@@ -1,0 +1,275 @@
+{% load static %}
+
+<html>
+<head>
+<title>shopping website</title>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!------------------------------------Nav-Bar------------------------------------>
+
+    
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top nav-custom">
+       <a class="navbar-brand" href="" style="text-align: center;  padding-left: 15px; padding-right: 150px;"><i class="material-icons" style="font-size: 30px; color:  yellow; text-align: center;padding: 5px;vertical-align: text-bottom;">fashion</i> FASHION HUB </a>
+       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#col_target">
+       <span class="navbar-toggler-icon"></span></button>
+       <div class="collapse navbar-collapse" id="col_target">
+           <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="#" style="color: yellow;">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="#aboutus" style="color: yellow;">About</a></li>
+               <li class="nav-item"><a class="nav-link" href="#" style="color: yellow;">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="#" style="color: yellow;">Blogs</a></li>
+               <li class="nav-item"><a class="nav-link" href="#" style="color: yellow;">Login</a></li>
+           </ul>
+       </div>
+   </nav>
+   <nav aria-label="breadcrumb">
+       <div class="container-fluid">
+           <div class="row">
+                <div class="col-md-9">
+                   <ol class="breadcrumb">
+                       You are here:
+                       &nbsp
+                       <li class="breadcrumb-item"><a href="#">Home</a></li>
+                       <li class="breadcrumb-item active" aria-current="page"><a href="#">Sign Up</a></li>
+                   </ol>
+               </div>
+               <div class="col-md-3 pull-right">
+                   <input type="text" class="form-control" placeholder="Search..." style="margin-top: 10px;">
+                     
+                     
+               </div>
+           </div>
+       </div>
+   </nav>
+<!------------------------------------Side Menu------------------------------------>
+<section class="header">
+    <div class="side-menu" id="side-menu">
+        <ul>
+            <li>Brands<i class="fa fa-angle-right"></i>
+            <ul>
+              <a href="/wrogn"><li>WROGN</li></a>
+              <a href="/flying"><li>FLYING MACHINE</li></a>
+                     <a href="/peter"><li>PETER ENGLAND</li></a>
+               </ul>
+            </li>
+
+            <li>Clothing<i class="fa fa-angle-right"></i>
+                <ul>
+                   <a href=""><li>Jeans</li></a>
+                          <a href=""><li>Formal Pants</li></a>
+                                 <a href=""><li>Casual Shirts</li></a>
+                                        <a href=""><li>Formal Shirts</li></a>
+                                               <a href=""><li>Undergarments</li></a>
+                                                      <a href=""><li>Casual Shoes</li></a>
+                                                             <a href=""><li>Formal Shoes</li></a>
+                                                                    <a href=""><li>Flip Flops</li></a>
+                                                                           <a href=""><li>Slippers</li></a>
+                   </ul>
+                </li>
+            <li>Mobiles<i class="fa fa-angle-right"></i>
+                <ul>
+                     <a href=""><li>oppo</li></a>
+                     <a href=""><li>Xiomi</li></a>
+                            <a href=""><li>Samsung</li></a>
+                                   <a href=""><li>Nokia</li></a>
+                                          <a href=""><li>Vivo</li></a>
+                                                 <a href=""><li>Apple</li></a>
+                                                        <a href=""><li>Micromax</li></a>
+                                                               <a href=""><li>Motrola</li></a>
+                                                                      <a href=""><li>Honor</li></a>
+                   </ul>
+                </li>
+                <li>Electronics<i class="fa fa-angle-right"></i>
+                    <ul>
+                     <a href=""><li>Fridge</li></a>
+                            <a href=""><li>Fan</li></a>
+                                   <a href=""><li>Cooler</li></a>
+                                          <a href=""><li>TV</li></a>
+                                                 <a href=""><li>AC</li></a>
+                                                        <a href=""><li>Chargers</li></a>
+                                                               <a href=""><li>Washing Machine</li></a>
+                                                                      <a href=""><li>Grinder</li></a>
+                                                                             <a href=""><li>Home Theater</li></a>
+                                                                                    <a href=""><li>Camera</li></a>
+                                                                                           <a href=""><li>Iron</li></a>
+                       </ul>
+                    </li>
+                    <li>laptops<i class="fa fa-angle-right"></i>
+                        <ul>
+                            <a href=""><li>Lenovo</li></a>
+                                   <a href=""><li>HP</li></a>
+                                          <a href=""><li>Dell</li></a>
+                                                 <a href=""><li>Acer</li></a>
+                                                        <a href=""><li>Asus</li></a>
+                           </ul>
+                        </li>
+                        <li>Books<i class="fa fa-angle-right"></i>
+                            <ul>
+                                   <a href=""><li>Novels</li></a>
+                                          <a href=""><li>Magazines</li></a>
+                                                 <a href=""><li>Story books</li></a>
+                               </ul>
+                            </li>
+                            
+                                <li>Furnitures<i class="fa fa-angle-right"></i>
+                                    <ul>
+                                          <a href=""><li>Sofa</li></a>
+                                                 <a href=""><li>Chairs</li></a>
+                                                        <a href=""><li>Tables</li></a>
+                                                               <a href=""><li>Bed</li></a>
+                                                                      <a href=""><li>Cupboard</li></a>
+                                       </ul>
+                                    </li>
+                                    <li>Grocery<i class="fa fa-angle-right"></i>
+                                        <ul>
+                                          <a href=""><li>Cups</li></a>
+                                                 <a href=""><li>Plates</li></a>
+                                                        <a href=""><li>Tray</li></a>
+                                                               <a href=""><li>Vas</li></a>
+                                           </ul>
+                                        </li>
+                                        <li>Kitchens<i class="fa fa-angle-right"></i>
+                                            <ul>
+                                                 <a href=""><li>Spices</li></a>
+                                                        <a href=""><li>Utensils</li></a>
+                                                               <a href=""><li>Gas stoves</li></a>
+                                               </ul>
+                                            </li>
+                                            <li>Baby Care<i class="fa fa-angle-right"></i>
+                                                <ul>
+                                                 <a href=""><li>Body oil</li></a>
+                                                        <a href=""><li>Hair Shampoo</li></a>
+                                                               <a href=""><li>Diapers</li></a>
+                                                                      <a href=""><li>Body lotion</li></a>
+                                                                             <a href=""><li>Powder </li></a>
+                                                   </ul>
+                                                </li>
+        </ul>
+    </div>
+
+    <!------------------------------------Image Slider------------------------------------>
+
+    <div class="slider">
+        <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                    <a href=""><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b25saW5lJTIwc2hvcHBpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" width="900" height="500" class="d-block w-100"></a>
+              </div>
+              <div class="carousel-item">
+                    <a href=""><img src="https://images.pexels.com/photos/974911/pexels-photo-974911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="900" height="500" class="d-block w-100"></a>
+              </div>
+              <div class="carousel-item">
+                    <a href=""><img src="https://images.pexels.com/photos/994234/pexels-photo-994234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="900" height="500" class="d-block w-100"></a>
+            </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+                <li data-target="#slider" data-slide-to="2"></li>
+              </ol>
+            
+          </div>
+    </div>
+</section>
+
+</section> 
+<section class="featured-categories">
+<div class="container">
+ <div class="row">
+     <div class="col-md-4">
+            <a href=""><img src="https://www.medianews4u.com/wp-content/uploads/2016/11/virat-kholi-feature-holding-1-2.jpg" height="270"></a>
+     </div>
+     <div class="col-md-4">
+            <a href=""><img src="http://fashionpro.me/wp-content/uploads/2017/07/Ct8bopaXYAAyRNY.jpg" height="270"></a>
+     </div>
+     <div class="col-md-4">
+            <a href=""><img src="https://etimg.etb2bimg.com/photo/78745682.cms" height="270"></a>
+        </div>
+     </div>
+ </div>
+ </section>
+
+ <section class="on-sale">
+    <div class="container">
+        <div class="title-box">
+               <h2>On Sale</h2>      
+        </div>
+        <div class="row">
+              {% for os in onsale%}
+            <div class="col-md-3">
+                <div class="product-top">
+                    <a href="{% url 'product' os.prod_id %}"><img src="{{os.prod_img.url}}" height="380"></a>
+                    <div class="overlay-right">
+                        <button type="button" class="btn btn-secondary" title="Quick shop">
+                               <i class="fa fa-eye"></i> 
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to wishlist">
+                               <i class="fa fa-heart-o"></i> 
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to cart">
+                               <i class="fa fa-shopping-cart"></i> 
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star-half-o"></i>
+                       <h3>ID:{{os.prod_id}}</h3>
+                       <h3>{{os.prod_name}}</h3>
+                       <h5>Rs{{os.price}}</h5>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>  
+</section>
+
+
+<section class="new-products">
+    <div class="container">
+            <div class="title-box">
+                    <h2>New Arrivals</h2>      
+             </div>
+             <div class="row">
+              {% for na in newarrivals%}
+                 <div class="col-md-3">
+                     <div class="product-top">
+                            <a href="{% url 'product' na.prod_id %}"><img src="{{na.prod_img.url}}" height="380"></a>
+                         <div class="overlay-right">
+                             <button type="button" class="btn btn-secondary" title="Quick shop">
+                                    <i class="fa fa-eye"></i> 
+                             </button>
+                             <button type="button" class="btn btn-secondary" title="Add to wishlist">
+                                    <i class="fa fa-heart-o"></i> 
+                             </button>
+                             <button type="button" class="btn btn-secondary" title="Add to cart">
+                                    <i class="fa fa-shopping-cart"></i> 
+                             </button>
+                         </div>
+                     </div>
+                     <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star-half-o"></i>
+                            <h3>ID:{{na.prod_id}}</h3>
+                            <h3>{{na.prod_name}}</h3>
+                            <h5>Rs{{na.price}}</h5>
+                     </div>
+                 </div>
+                 {% endfor %}
+            </div>
+         </div>  
+</section>

@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "batisteo.vscode-django",
+        "formulahendry.code-runner",
+        "ecmel.vscode-html-css",
+        "ritwickdey.liveserver"
+    ]
+}

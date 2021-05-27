@@ -1,0 +1,248 @@
+{% load static %}
+
+<html>
+<head>
+<title>shopping website</title>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!------------------------------------Nav-Bar------------------------------------>
+
+    
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top nav-custom">
+       <a class="navbar-brand" href="" style="text-align: center;  padding-left: 15px; padding-right: 150px;"><i class="material-icons" style="font-size: 30px; color:  yellow; text-align: center;padding: 5px;vertical-align: text-bottom;">fashion</i> FASHION HUB </a>
+       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#col_target">
+       <span class="navbar-toggler-icon"></span></button>
+       <div class="collapse navbar-collapse" id="col_target">
+           <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="#" style="color: yellow;">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="#aboutus" style="color: yellow;">About</a></li>
+               <li class="nav-item"><a class="nav-link" href="#" style="color: yellow;">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="#" style="color: yellow;">Blogs</a></li>
+               <li class="nav-item"><a class="nav-link" href="#" style="color: yellow;">Login</a></li>
+           </ul>
+       </div>
+   </nav>
+   <nav aria-label="breadcrumb">
+       <div class="container-fluid">
+           <div class="row">
+                <div class="col-md-9">
+                   <ol class="breadcrumb">
+                       You are here:
+                       &nbsp
+                       <li class="breadcrumb-item"><a href="#">Home</a></li>
+                       <li class="breadcrumb-item active" aria-current="page"><a href="#">Sign Up</a></li>
+                   </ol>
+               </div>
+               <div class="col-md-3 pull-right">
+                   <input type="text" class="form-control" placeholder="Search..." style="margin-top: 10px;">
+               </div>
+           </div>
+       </div>
+   </nav>
+
+   <section class="single-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                    <div id="product-slider" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <a href=""><img src="{{product.prod_img.url}}" class="d-block w-100"></a>
+                              </div>
+                              
+                            
+                            
+                          </div>
+                          </div>
+            </div>
+            <div class="col-md-7">
+                <p class="new-arrival text-center">NEW</p>
+                <h2>{{product.prod_name}}</h2>
+                <p>Product ID: {{product.prod_id}}</p>
+          
+                        <i class="fa fa-star "></i> 
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-half-o"></i>
+
+                        <p class="price">INR Rs {{product.price}}</p>
+                        <p><b>Availability:</b> {{product.available}}</p>
+                        <p><b>Condition:</b> New</p>
+                        
+                        <label>Quantity: </label>
+                        <input type="text" value="1">
+                        <a href=""><button type="button" class="btn btn-primary" >Add to Cart</button></a>
+                        <a href=""><button type="button" class="btn btn-primary" style="background-color: orangered;">Buy Now</button></a>
+                        
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-------------------------------------------Product Description--------------------------------->
+
+
+<section class="product-description">
+    <div class="container">
+        <h6>Product Description</h6>
+        <p>This trendy T-Shirt will lend an absolutely stylish appeal to your casual outfit.
+             Team it up with a pair of blue jeans and loafers for a trendy look
+              while stepping out for a beers with the lads.
+             Heading for a casual lunch with friends? Throw on this T-Shirt with a pair of rugged jeans
+              and sneakers to add a stylish flair to your look.</p>
+             
+                   <hr>
+    </div>
+
+    <div class="container">
+            <div class="title-box">
+                   <h2>Similar</h2>      
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                            <a href="shopping.html"><img src="similarproduct1.png"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick shop">
+                                   <i class="fa fa-eye"></i> 
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to wishlist">
+                                   <i class="fa fa-heart-o"></i> 
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to cart">
+                                   <i class="fa fa-shopping-cart"></i> 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                           <i class="fa fa-star"></i> 
+                           <i class="fa fa-star"></i> 
+                           <i class="fa fa-star"></i> 
+                           <i class="fa fa-star"></i> 
+                           <i class="fa fa-star-half-o"></i>
+                           <h3>Being Human</h3>
+                           <h5>Rs1,500</h5>
+                    </div>
+                </div>
+   
+   
+                <div class="col-md-3">
+                       <div class="product-top">
+                            <a href="shopping.html"><img src="similarproduct2.png"></a>
+                           <div class="overlay-right">
+                               <button type="button" class="btn btn-secondary" title="Quick shop">
+                                      <i class="fa fa-eye"></i> 
+                               </button>
+                               <button type="button" class="btn btn-secondary" title="Add to wishlist">
+                                      <i class="fa fa-heart-o"></i> 
+                               </button>
+                               <button type="button" class="btn btn-secondary" title="Add to cart">
+                                      <i class="fa fa-shopping-cart"></i> 
+                               </button>
+                           </div>
+                       </div>
+                       <div class="product-bottom text-center">
+                              <i class="fa fa-star"></i> 
+                              <i class="fa fa-star"></i> 
+                              <i class="fa fa-star"></i> 
+                              <i class="fa fa-star"></i> 
+                              <i class="fa fa-star-full-o"></i>
+                              <h3>Being Human</h3>
+                              <h5>Rs1,700</h5>
+                       </div>
+                </div>
+   
+   
+                   <div class="col-md-3">
+                           <div class="product-top">
+                                <a href="shopping.html"><img src="similarproduct3.png"></a>
+                               <div class="overlay-right">
+                                   <button type="button" class="btn btn-secondary" title="Quick shop">
+                                          <i class="fa fa-eye"></i> 
+                                   </button>
+                                   <button type="button" class="btn btn-secondary" title="Add to wishlist">
+                                          <i class="fa fa-heart-o"></i> 
+                                   </button>
+                                   <button type="button" class="btn btn-secondary" title="Add to cart">
+                                          <i class="fa fa-shopping-cart"></i> 
+                                   </button>
+                               </div>
+                           </div>
+                           <div class="product-bottom text-center">
+                                  <i class="fa fa-star"></i> 
+                                  <i class="fa fa-star"></i> 
+                                  <i class="fa fa-star"></i> 
+                                  <i class="fa fa-star"></i> 
+                                  <i class="fa fa-star-half-o"></i>
+                                  <h3>Being Human</h3>
+                                  <h5>Rs1,400</h5>
+                           </div>
+                   </div>
+   
+   
+                   <div class="col-md-3">
+                           <div class="product-top">
+                                <a href="shopping.html"><img src="similarproduct4.png"></a>
+                               <div class="overlay-right">
+                                   <button type="button" class="btn btn-secondary" title="Quick shop">
+                                          <i class="fa fa-eye"></i> 
+                                   </button>
+                                   <button type="button" class="btn btn-secondary" title="Add to wishlist">
+                                          <i class="fa fa-heart-o"></i> 
+                                   </button>
+                                   <button type="button" class="btn btn-secondary" title="Add to cart">
+                                          <i class="fa fa-shopping-cart"></i> 
+                                   </button>
+                               </div>
+                           </div>
+                           <div class="product-bottom text-center">
+                                  <i class="fa fa-star"></i> 
+                                  <i class="fa fa-star"></i> 
+                                  <i class="fa fa-star"></i> 
+                                  <i class="fa fa-star-half-o"></i> 
+                                  <i class="fa fa-star-full-o"></i>
+                                  <h3>Being Human</h3>
+                                  <h5>Rs1,800</h5>
+                           </div>
+                   </div>
+            </div>
+        </div>  
+</section>
+
+
+
+
+<!-------------------------------------Footer--------------------------------------->
+
+
+
+
+
+
+<script>
+    function openmenu()
+    {
+        document.getElementById("side-menu").style.display="block";
+        document.getElementById("menu-btn").style.display="none";
+        document.getElementById("close-btn").style.display="block";
+    }
+    function closemenu()
+    {
+        document.getElementById("side-menu").style.display="none";
+        document.getElementById("menu-btn").style.display="block";
+        document.getElementById("close-btn").style.display="none";
+    }
+</script>
+</body>
