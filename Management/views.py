@@ -49,7 +49,7 @@ def employeeLogin(request):
         emp = empTable.objects.filter(id=id2, password=password)
         print(emp)
         if emp:
-            request.session['emp'] = id2
+            request.session['login'] = id2
             return redirect('empdashboard')
             # employee = empTable.objects.get(id=id2)
             # return render(request, 'EmployeeProfile.html', {'employee': employee})
@@ -64,8 +64,8 @@ def employeeLogin(request):
 
 
 def empdashboard(request):
-    if 'emp' in request.session:
-        id2 = request.session['emp']
+    if 'login' in request.session:
+        id2 = request.session['login']
         employee = empTable.objects.get(id=id2)
         return render(request, 'EmployeeProfile.html', {'employee': employee})
     else:
@@ -76,7 +76,7 @@ def empdashboard(request):
 """For HR/employee Logout"""
 
 
-def employeeLogout(request):
+def logout(request):
     # auth.logout(request)
     try:
         del request.session['login']
