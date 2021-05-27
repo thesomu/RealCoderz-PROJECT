@@ -1,0 +1,61 @@
+{% extends 'theme.html' %}
+
+{% block content %}
+    <script type="text/javascript">
+                function logout()
+            {
+                window.location.href="logout";
+            }
+            function profile(){
+                    window.location.href="profile";
+            }
+
+    </script>
+
+<div class="row">
+<div class="col-md-6">
+
+    {% if current_user %}
+
+        <span class="float-left">Welcome <span style="color: dodgerblue;"> {{ current_user }} !!</span></span>
+
+    {% endif %}
+</div>
+    <div class="col-md-6">
+        {% if current_user %}
+
+          <a href ="{% url 'logout' %}" class="float-right">Logout</a>
+    {% endif %}
+
+    </div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-md-6 mx-auto">
+     <form action="shipping"  method="post">
+                        {% csrf_token %}
+            <table align="center">
+                <tr>
+                    <td align="left">First Name:&nbsp</td>
+                    <td><input type="text" name="first_name" class="form-control" placeholder="First Name" required="True"></td></tr>
+
+                <tr>
+                    <td align="left">Last Name:&nbsp</td>
+                    <td><input type="text" name="last_name" class="form-control" placeholder="Last Name" required="True"></td></tr>
+
+
+                    <td align="left">Phone Number:&nbsp</td>
+                    <td><input type="number" name="phoneno" class="form-control" placeholder="Phone no" required="True"></td></tr>
+
+                <tr>
+                    <td align="left">Address:&nbsp</td>
+                    <td><input type="text" name="address" class="form-control" placeholder="Address" required="True">  </td></tr>
+
+            </table><br>
+         <center><input type="submit" value="Submit" class="btn btn-success btn-lg"></center>
+        </form>
+    </div>
+</div>
+</div>
+<button type="button" class="btn btn-secondary" onclick="profile()">Show Details</button>
+{% endblock %}

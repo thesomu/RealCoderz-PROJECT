@@ -1,0 +1,107 @@
+{% extends 'theme.html' %}
+
+{% block content %}
+   <script type="text/javascript">
+               function signup()
+            {
+                window.location.href="/";
+            }
+   </script>
+
+    <style>
+    fieldset.fldset
+{
+font-style:italic;
+text-align:center;
+font-size:medium;
+text-align:center;
+}
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+
+}
+.alert {
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+.breadcrumb  {
+   background: linear-gradient(120grad, rgb(100, 57, 134), rgb(152, 174, 213));
+    color: #E5E5E5;
+}
+</style>
+     <nav aria-label="breadcrumb">
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-md-12">
+                    <ol class="breadcrumb">
+                        You are here:
+                        &nbsp
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Sign IN</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+     <div class = "container-fluid">
+        <div class="row">
+         <div class="col-md-6">
+        </div>
+            <div class="col-md-6">
+                <fieldset class="fldset" style="margin-top:30px;">
+                	<h1 style="text-align:center;margin-top:10px;">Welcome!</h1>
+
+                    {% for message in messages %}
+                        <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <h6> {{ message }}</h6>
+                        </div>
+                    {% endfor %}
+
+    <form action="login" method="post">
+        {% csrf_token %}
+        <table align="center">
+            <tr>
+                    <td align="left">Username:&nbsp</td>
+                    <td><input type="text" name="username" class="form-control" placeholder="User Name" required="True"></td></tr>
+
+                <tr>
+         <tr>
+                    <td align="left">Password:&nbsp</td>
+                    <td><input type="password" name="password" class="form-control" placeholder="Password" required="True"></td></tr>
+
+                <tr>
+
+        </table>
+    <br>
+                <input type="submit" style="background-color:rgb(152, 174, 213);">
+    </form>
+                <button type="button" onclick="signup()" class="float-right" style="background-color:rgb(152, 174, 213);">Sign Up</button>
+
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'theme.html' %}
+
+{% block content %}
+{% comment %}<div class="row">
+<div class="col-md-6">
+
+    {% if current_user %}
+
+        <span class="float-left">Welcome <span style="color: dodgerblue;"> {{ current_user }} !!</span></span>
+
+    {% endif %}
+</div>
+    <div class="col-md-6">
+        {% if current_user %}
+
+          <a href ="{% url 'logout' %}" class="float-right">Logout</a>
+    {% endif %}
+
+    </div>
+</div>{% endcomment %}
+<table class="table table-hover table-info table-sm">
+    <thead class="thead-dark">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+{% for profile in prof %}
+    <tr>
+        <td>{{ profile.ship_fname }}</td>
+        <td>{{ profile.ship_lname }}</td>
+        <td>{{ profile.ship_phone }}</td>
+        <td>{{ profile.ship_address }}</td>
+        <td>
+            <a href="/edit/{{ profile.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a> /
+            <a href="/delete/{{ profile.id }}">Delete</a>
+        </td>
+    </tr>
+{% endfor %}
+    </tbody>
+</table>
+
+<br>
+<br>
+<center><a href="/dashboard" class="btn btn-primary">Add New Record</a></center>
+{% endblock %}
