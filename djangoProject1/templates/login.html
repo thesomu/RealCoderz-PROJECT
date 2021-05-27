@@ -49,8 +49,8 @@ fieldset {
   color: black;
 }
 .breadcrumb  {
-   background: linear-gradient(120grad, rgb(100, 57, 134), rgb(152, 174, 213));
-    color: #E5E5E5;
+   background:#F0EEEE;
+
 }
 </style>
      <nav aria-label="breadcrumb">
@@ -70,10 +70,8 @@ fieldset {
     </nav>
      <div class = "container-fluid">
         <div class="row">
-         <div class="col-md-6">
-        </div>
-            <div class="col-md-6">
-                <fieldset class="fldset" style="margin-top:30px;">
+            <div class="col-md-6" style="margin: auto;">
+                <fieldset class="fldset" style="margin-top:30px;background: linear-gradient(to right, rgb(100, 57, 134), rgb(152, 174, 213));">
                 	<h1 style="text-align:center;margin-top:10px;">Welcome!</h1>
 
                     {% for message in messages %}
@@ -99,9 +97,9 @@ fieldset {
 
         </table>
     <br>
-                <input type="submit" style="background-color:rgb(152, 174, 213);">
+                <input type="submit">
     </form>
-                <button type="button" onclick="signup()" class="float-right" style="background-color:rgb(152, 174, 213);">Sign Up</button>
+                <button type="button" onclick="signup()" class="float-right">Sign Up</button>
 
 
 {% endblock %}

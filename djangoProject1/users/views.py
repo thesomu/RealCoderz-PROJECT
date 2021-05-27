@@ -3,7 +3,8 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Customer, Shipping
 from django.contrib import messages, auth
-
+from django.core.mail import send_mail
+from django.conf import settings
 
 # Create your views here.
 
@@ -56,6 +57,11 @@ def register(request):
                                 cust_fname=first_name, cust_lname=last_name)
                 cust.save()
                 print('user created')
+                print(username)
+                send_mail("Welcome to FASHION HUB", f"Thankyou {username} for joining the FASHION HUB",
+                          settings.EMAIL_HOST_USER,
+                          [email])
+
                 return redirect('login')
         else:
             messages.info(request, 'Password not matching')
@@ -107,11 +113,19 @@ def destroy(request, id):
 
 def edit(request, id):
     ship = Shipping.objects.get(id=id)
-    return render(request, 'edit.html')
+    return render(request, 'edit.html', {'ship': ship})
 
 
 def update(request, id):
-    pass
+    shipfname = request.POST['first_name']
+    shiplname = request.POST['last_name']
+    shipphoneno = request.POST['phoneno']
+    shipaddress = request.POST['address']
+    print(shipfname, shiplname, shipaddress, shipphoneno)
+    ship = Shipping(id=id, ship_fname=shipfname, ship_lname=shiplname, ship_phone=shipphoneno, ship_address=shipaddress)
+    ship.save()
+    print("updated")
+    return redirect('profile')
 
 
 def home(request):

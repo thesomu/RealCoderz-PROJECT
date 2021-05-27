@@ -68,8 +68,9 @@ fieldset {
   color: black;
 }
 .breadcrumb  {
-   background: linear-gradient(to right, rgb(100, 57, 134), rgb(152, 174, 213));
-    color: #E5E5E5;
+   background-color:#F0EEEE;
+}
+
 }
 a{
     color: #3390FF;
@@ -91,10 +92,9 @@ a{
     </nav>
     <div class = "container-fluid">
         <div class="row">
-         <div class="col-md-6">
-              </div>
-            <div class="col-md-6">
-                <fieldset class="fldset" style="margin-top:30px;">
+            <div class="col-md-6" style="margin: auto;">
+                <fieldset class="fldset" style="margin-top:30px; background: linear-gradient(to right, rgb(100, 57, 134), rgb(152, 174, 213));")
+}">
                 	<h1 style="text-align:center;margin-top:10px;">Welcome!</h1>
                     {% for message in messages %}
                         <div class="alert">
@@ -134,9 +134,9 @@ a{
                     <td><input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" required="True">  </td></tr>
 
             </table><br>
-                      <input type="submit" value="Submit" style="background-color:rgb(152, 174, 213);">
+                      <input type="submit" value="Submit">
         </form>
-                    <button type="button" onclick="login()" class="float-right" style="background-color:rgb(152, 174, 213);">Sign in</button>
+                    <button type="button" onclick="login()" class="float-right">Sign in</button>
 
                 </fieldset>
             </div>

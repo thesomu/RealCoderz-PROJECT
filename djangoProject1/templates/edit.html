@@ -1,24 +1,24 @@
 {% extends 'theme.html' %}
 
 {% block content %}
-<form action="update" method="post">
+<form action="/update/{{ ship.id }}" method="post">
                         {% csrf_token %}
             <table align="center">
                 <tr>
                     <td align="left">First Name:&nbsp</td>
-                    <td><input type="text" name="first_name" placeholder="First Name" required="True"></td></tr>
+                    <td><input type="text" name="first_name" placeholder="First Name" value="{{ ship.ship_fname }}"  required="True"></td></tr>
 
                 <tr>
                     <td align="left">Last Name:&nbsp</td>
-                    <td><input type="text" name="last_name" placeholder="Last Name" required="True"></td></tr>
+                    <td><input type="text" name="last_name" placeholder="Last Name" value="{{ ship.ship_lname }}" required="True"></td></tr>
 
 
                     <td align="left">Phone Number:&nbsp</td>
-                    <td><input type="number" name="phoneno" placeholder="Phone no" required="True"></td></tr>
+                    <td><input type="number" name="phoneno" placeholder="Phone no" value="{{ ship.ship_phone }}" required="True"></td></tr>
 
                 <tr>
                     <td align="left">Address:&nbsp</td>
-                    <td><input type="text" name="address" placeholder="Address" required="True">  </td></tr>
+                    <td><input type="text" name="address" placeholder="Address" value="{{ ship.ship_address }}" required="True">  </td></tr>
 
             </table><br>
  <input type="submit" value="Submit">
