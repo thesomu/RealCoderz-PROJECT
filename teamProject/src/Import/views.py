@@ -53,7 +53,9 @@ def import_view(request):
         if request.method == "POST":
             if(request.POST['imp'] != None):
                 logger.info("Request redirected to next page if the user selects import option from the menu")
-                return render(request, "importPage.html", {})
+                return render(request, "importPage.html")
+        else:
+            return render(request,'importPage.html')
 
     else:
         logger.warn("User session not found and request redirected to dashboard.")
