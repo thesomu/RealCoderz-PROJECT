@@ -62,6 +62,6 @@ class GeneratePdf(View):
             'customer_name': 'Cooper Mann',
             'order_id': 1233434,
         }
-        pdf = render_to_pdf('invoice.html', data)
+        pdf = render_to_pdf('balancesheet.html', data)
         return HttpResponse(pdf, content_type='application/pdf')    
        
