@@ -69,3 +69,17 @@ Traceback (most recent call last):
 ValueError: Field 'id' expected a number but got 'kanishk'.
 2021-05-28 11:40:34,482:INFO:C:\Users\kanis\projects\HR\Employee\views.py changed, reloading.
 2021-05-28 11:40:34,498:DEBUG:Using proactor: IocpProactor
+2021-05-28 11:47:57,288:INFO:Employee login successful
+2021-05-28 11:47:57,494:INFO:Employee session starts
+2021-05-28 11:48:11,359:INFO:HR/employee session ends
+2021-05-28 11:48:11,364:INFO:HR/employee logout
+2021-05-28 11:52:23,092:INFO:C:\Users\kanis\projects\HR\templates\EmployeeProfile.html changed, reloading.
+2021-05-28 11:52:23,095:DEBUG:Using proactor: IocpProactor
+2021-05-28 11:52:41,496:INFO:C:\Users\kanis\projects\HR\templates\EmployeeProfile.html changed, reloading.
+2021-05-28 11:52:41,497:DEBUG:Using proactor: IocpProactor
+2021-05-28 11:52:54,144:INFO:Employee login successful
+2021-05-28 11:52:54,394:INFO:Employee session starts
+2021-05-28 11:52:56,321:INFO:HR/employee session ends
+2021-05-28 11:52:56,329:INFO:HR/employee logout
+2021-05-28 11:54:01,373:INFO:C:\Users\kanis\projects\HR\templates\HRProfile.html changed, reloading.
+2021-05-28 11:54:01,375:DEBUG:Using proactor: IocpProactor
