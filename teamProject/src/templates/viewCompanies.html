@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Import Orders</title>
-    <link rel="stylesheet" href="{% static '/Css/importOrdersStyles.css' %}" />
+    <link rel="stylesheet" href="{% static '/Css/viewCompaniesStyles.css' %}" />
     <link rel="stylesheet" href="{% static '/Css/bootstrap.min.css' %}" />
     <script src="{% static '/js/bootstrap.min.js' %}"></script>
   </head>
@@ -45,7 +45,7 @@
                   class="dropdown-menu dropdown"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <li><a class="dropdown-item" href="/viewCompanies">View Companies</a></li>
+                  <li><a class="dropdown-item" href="#">View Companies</a></li>
                   <li>
                     <a class="dropdown-item" href="/menu">
                       Insert Import Orders</a
@@ -71,28 +71,21 @@
       <div class="container">
         <table border="2px" cellspacing="15px" cellpadding="15px">
           <tr>
-            <th>Import ID</th>
-            <th>Import Date</th>
-            <th>Country</th>
+            <th>Company ID</th>
             <th>Product Name</th>
-            <th>Total Cost</th>
-            <th>Status</th>
-            <th colspan="2">Actions</th>
+            <th>Company Name</th>
+            <th>Price(per piece</th>
+            <th>Shipping Cost</th>
+            <th>Date Of Delivery(Estimated)</th>
           </tr>
-          {% for orders in importOrders %}
+          {% for company in companies %}
           <tr>
-            <td>{{orders.orderImport_id}}</td>
-            <td>{{orders.order_date}}</td>
-            <td>{{orders.import_product}}</td>
-            <td>{{orders.orderImport_country}}</td>
-            <td>{{orders.total_cost}}</td>
-            <td>{{orders.status_of_import}}</td>
-            <td>
-              <a href="/edit/{{ orders.id }}">Edit</a>
-            </td>
-            <td>
-              <a href="/delete/{{ orders.id }}">Delete</a>
-            </td>
+            <td>{{company.company_id}}</td>
+            <td>{{company.product_name}}</td>
+            <td>{{company.company_name}}</td>
+            <td>{{company.price_per_piece}}</td>
+            <td>{{company.shipping_cost}}</td>
+            <td>{{company.estimated_dateOfDelivery}}</td>
           </tr>
           {% endfor %}
         </table>

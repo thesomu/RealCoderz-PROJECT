@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.contrib import messages
 from django.shortcuts import redirect, render
 
-from Import.models import Import
+from Import.models import Import, Companies
 import logging
 
 logger = logging.getLogger(__name__)
@@ -124,3 +124,16 @@ def deleteImportOrders_view(request, id):
     orders.delete()
     logger.info("Record with id "+str(id)+" deleted successfully and request forwarded to displayOrders page")
     return redirect('/displayOrders')
+
+def displayCompanies_view(request):
+    """
+    """
+    logger.info("Inside displayCompanies_view")
+    if 'user' in request.session:
+        logger.info("User session successful")
+        companies = Companies.objects.all()
+        logger.info("Record fetched successfully and request redirected to viewCompanies page.")
+        return render(request, "viewCompanies.html",{'companies': companies})
+    else:
+        logger.warn("User session not found and request redirected to dashboard.")
+        return redirect('/')

@@ -1,0 +1,118 @@
+2021-05-28 17:01:09,077 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:02:10,753 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/fashionHub/urls.py changed, reloading.
+2021-05-28 17:02:10,753 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:02:11,124 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:02:14,896 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:02:15,009 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:03:16,821 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:04:39,545 Import.views INFO     Main Dashboard page is requested
+2021-05-28 17:04:40,015 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:04:57,605 Import.views INFO     Inside portalLogin_view
+2021-05-28 17:04:57,605 Import.views INFO     User authenticated and request sent to next page
+2021-05-28 17:06:07,029 Import.views INFO     Inside displayImportOrders_view
+2021-05-28 17:06:07,032 Import.views INFO     User session successful
+2021-05-28 17:06:07,032 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-28 17:06:10,584 Import.views INFO     Inside import_view
+2021-05-28 17:06:10,587 Import.views DEBUG    User session successful
+2021-05-28 17:06:10,646 django.request ERROR    Internal Server Error: /menu
+Traceback (most recent call last):
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view Import.views.import_view didn't return an HttpResponse object. It returned None instead.
+2021-05-28 17:06:14,030 Import.views INFO     Inside import_view
+2021-05-28 17:06:14,034 Import.views DEBUG    User session successful
+2021-05-28 17:06:14,036 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-28 17:06:20,722 Import.views INFO     Inside portalLogin_view
+2021-05-28 17:06:20,722 Import.views INFO     User authenticated and request sent to next page
+2021-05-28 17:06:20,955 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:27:53,401 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/fashionHub/urls.py changed, reloading.
+2021-05-28 17:27:53,402 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:27:53,747 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:27:57,599 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:27:57,713 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:48:55,465 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:49:23,784 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/fashionHub/urls.py changed, reloading.
+2021-05-28 17:49:23,785 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:49:24,256 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:49:30,966 Import.views INFO     Main Dashboard page is requested
+2021-05-28 17:49:31,232 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:49:39,774 Import.views INFO     Inside portalLogin_view
+2021-05-28 17:49:39,774 Import.views INFO     User authenticated and request sent to next page
+2021-05-28 17:49:45,116 Import.views INFO     Inside displayImportOrders_view
+2021-05-28 17:49:45,119 Import.views INFO     User session successful
+2021-05-28 17:49:45,119 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-28 17:49:47,159 Import.views INFO     Inside displayCompanies_view
+2021-05-28 17:49:47,162 Import.views INFO     User session successful
+2021-05-28 17:49:47,163 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-28 17:50:20,089 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/viewCompanies.html changed, reloading.
+2021-05-28 17:50:20,090 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:50:20,464 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:50:21,572 Import.views INFO     Inside displayCompanies_view
+2021-05-28 17:50:21,577 Import.views INFO     User session successful
+2021-05-28 17:50:21,578 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-28 17:50:21,735 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:50:23,611 Import.views INFO     Inside displayCompanies_view
+2021-05-28 17:50:23,615 Import.views INFO     User session successful
+2021-05-28 17:50:23,615 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-28 17:50:23,761 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:50:34,836 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/viewCompanies.html changed, reloading.
+2021-05-28 17:50:34,838 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:50:35,214 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:50:35,434 Import.views INFO     Inside displayCompanies_view
+2021-05-28 17:50:35,438 Import.views INFO     User session successful
+2021-05-28 17:50:35,438 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-28 17:50:35,581 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:50:36,728 Import.views INFO     Inside displayCompanies_view
+2021-05-28 17:50:36,731 Import.views INFO     User session successful
+2021-05-28 17:50:36,731 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-28 17:50:36,846 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:50:37,857 Import.views INFO     Inside displayCompanies_view
+2021-05-28 17:50:37,861 Import.views INFO     User session successful
+2021-05-28 17:50:37,861 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-28 17:50:37,979 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:50:45,567 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/viewCompanies.html changed, reloading.
+2021-05-28 17:50:45,567 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:50:45,929 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:50:47,377 Import.views INFO     Inside displayCompanies_view
+2021-05-28 17:50:47,382 Import.views INFO     User session successful
+2021-05-28 17:50:47,383 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-28 17:50:47,515 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:50:52,267 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/viewCompanies.html changed, reloading.
+2021-05-28 17:50:52,268 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:50:52,630 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:50:53,871 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/viewCompanies.html changed, reloading.
+2021-05-28 17:50:53,872 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:50:54,290 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:51:05,645 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/viewCompanies.html changed, reloading.
+2021-05-28 17:51:05,646 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:51:06,010 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:51:07,688 Import.views INFO     Inside displayCompanies_view
+2021-05-28 17:51:07,692 Import.views INFO     User session successful
+2021-05-28 17:51:07,693 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-28 17:51:07,821 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:51:13,349 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/viewCompanies.html changed, reloading.
+2021-05-28 17:51:13,350 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:51:13,708 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:51:37,124 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/viewCompanies.html changed, reloading.
+2021-05-28 17:51:37,125 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-28 17:51:37,547 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-28 17:51:38,059 Import.views INFO     Inside displayCompanies_view
+2021-05-28 17:51:38,063 Import.views INFO     User session successful
+2021-05-28 17:51:38,063 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-28 17:51:38,198 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:52:12,171 Import.views INFO     Inside displayCompanies_view
+2021-05-28 17:52:12,174 Import.views INFO     User session successful
+2021-05-28 17:52:12,175 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-28 17:52:12,330 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:52:25,651 Import.views INFO     Inside displayCompanies_view
+2021-05-28 17:52:25,655 Import.views INFO     User session successful
+2021-05-28 17:52:25,655 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-28 17:52:25,785 django.request WARNING  Not Found: /favicon.ico
+2021-05-28 17:52:33,730 Import.views INFO     Inside displayCompanies_view
+2021-05-28 17:52:33,733 Import.views INFO     User session successful
+2021-05-28 17:52:33,733 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-28 17:52:33,860 django.request WARNING  Not Found: /favicon.ico
