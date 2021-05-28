@@ -24,8 +24,27 @@
     body{
         background: white;
     }
+
     .nav-custom{
         background-color: #9b59b6;
+    }
+
+    .container {
+            width:900px;
+            height:190px;
+            padding-top:20px;
+            padding-left:15px;
+            padding-right:15px;
+    }
+
+    .containerLeft{
+        float: left;
+        width: 275px;
+        height: 400px;
+        background-color: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0,0,0,1);
     }
 
 
@@ -44,8 +63,10 @@
                        aria-expanded="false"
                        href="#">Login</a>
                     <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
+                        <a class="dropdown-item" href="#">Admin Login</a>
                         <a class="dropdown-item" href="{% url 'login' %}">HR Login</a>
                         <a class="dropdown-item" href="{% url 'employeeLogin' %}">Employee Login</a>
+                        <a class="dropdown-item" href="#">Import/Export Login</a>
                         <a class="dropdown-item" href="#">Accountant Login</a>
                     </div>
                 </li>
@@ -54,7 +75,41 @@
         </div>
     </nav>
 </div>
-
-
+<div>
+    <div class="container">
+        <div class="containerLeft">
+            <a href="{% url 'team' %}"><img src="static\Team.png" style="width: 225px">
+                <br><br><br><br>
+                <center>
+                    Team members
+                </center>
+            </a>
+        </div>
+        <div class="containerLeft">
+            <a href="{% url 'achievements' %}"><img src="static\Achievements.jpg"
+                                                    style="width: 225px; height: 225px">
+                <br><br><br><br>
+                <center>
+                    Achievements
+                </center>
+            </a>
+        </div>
+        <div class="containerLeft">
+            <a href="{% url 'adventures' %}"><img src="static\Adventures.jpg" style="width: 200px; height: 225px">
+                <br><br><br><br>
+                <center>
+                    Adventures
+                </center>
+            </a>
+        </div>
+    </div>
+    <!--    <table>-->
+    <!--        <tr>-->
+    <!--            <td><a href="{% url 'team' %}"><img src="static\Achievements.jpg" style="width:100px"></a></td>-->
+    <!--            <td><a href="{% url 'achievements' %}"><img src="static\Achievements.jpg" style="width:100px"></a></td>-->
+    <!--            <td><a href="{% url 'adventures' %}"><img src="static\Achievements.jpg" style="width:100px"></a></td>-->
+    <!--        </tr>-->
+    <!--    </table>-->
+</div>
 </body>
 </html>

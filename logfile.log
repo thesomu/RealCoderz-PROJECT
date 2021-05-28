@@ -1,0 +1,25 @@
+INFO:django.utils.autoreload:C:\Users\kanis\projects\HR\Management\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\kanis\projects\HR\Management\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+C:\Users\kanis\projects\HR\Management\views.py changed, reloading.
+Using proactor: IocpProactor
+2021-05-27 23:27:15,689
+2021-05-27 23:27:15,691
+2021-05-27 23:27:46,494:INFO
+2021-05-27 23:27:46,495:DEBUG
+2021-05-27 23:30:04,010:INFO:HR login successful
+2021-05-27 23:30:04,231:INFO:HR session starts
+2021-05-27 23:30:07,936:INFO:HR/employee session ends
+2021-05-27 23:37:55,404:INFO:C:\Users\kanis\projects\HR\Management\views.py changed, reloading.
+2021-05-27 23:37:55,404:DEBUG:Using proactor: IocpProactor
+2021-05-27 23:38:02,405:INFO:HR login successful
+2021-05-27 23:38:02,596:INFO:HR session starts
+2021-05-27 23:38:03,550:INFO:Getting employees details
+2021-05-27 23:38:07,502:INFO:Employee deleted successfully
+2021-05-27 23:38:10,965:INFO:Update the employee
+2021-05-27 23:38:15,516:ERROR:Error in updating employee name
+2021-05-27 23:38:15,517:ERROR:Error in updating employee address
+2021-05-27 23:38:24,304:INFO:Employee updated successfully
+2021-05-27 23:38:24,316:INFO:Getting employees details
+2021-05-27 23:38:27,029:INFO:HR/employee session ends
+2021-05-27 23:38:27,034:INFO:HR/employee logout
