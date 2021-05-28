@@ -52,7 +52,7 @@ def update(request, id):
     jais=Export(id=id,billing_amt=billing_amt,date_of_export=date_of_export,gst_imposed=gst_imposed,exported_to=exported_to,order_ID=order_ID,quantity=quantity,estimated_time=estimated_time)
     jais.save()
     return redirect('/exports/')
-#function used to generate balance shet pdf
+#class used to generate balance shet pdf
 class GeneratePdf(View):
     logger.info("balance sheet pdf generated")
     def get(self, request, *args, **kwargs):

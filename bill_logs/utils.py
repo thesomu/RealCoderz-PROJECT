@@ -9,7 +9,7 @@ logger = logging.getLogger('django')
 
 #funtion used to render pdf
 def render_to_pdf(template_src, context_dict={}):
-    logger.info("balance sheet pdf generated")
+    logger.info("balance sheet pdf render")
     template = get_template(template_src)
     html = template.render(context_dict)
     result = BytesIO()
