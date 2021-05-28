@@ -36,7 +36,7 @@ def register(request):
             subject = 'Welcome to Fashion HUB'
             message = 'Hello Mr.Miss '+name+', thank you for registering in Fashion HUB.'
             email_from = settings.EMAIL_HOST_USER
-            recipient_list = ['kanishkmaurya98@gmail.com']
+            recipient_list = [email]
             send_mail(subject, message, email_from, recipient_list)
 
             return redirect('details')
