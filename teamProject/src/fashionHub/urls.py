@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Import.views import portal_view, portalLogin_view, import_view, insertImportOrder_view, displayImportOrders_view, editImportOrders_view, deleteImportOrders_view, updateImportOrders_view
+from Import.views import portal_view, portalLogin_view, import_view, insertImportOrder_view, displayImportOrders_view, editImportOrders_view, deleteImportOrders_view, updateImportOrders_view, logout
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', portal_view, name='portalPage'),
     path('login', portalLogin_view, name='portalLogin'),
+    path('out', logout_view, name='pageLogout'),
     path('menu', import_view, name='importMain'),
     path('import', insertImportOrder_view, name="importOrder"),
     path('displayOrders', displayImportOrders_view, name='showOrders'),
