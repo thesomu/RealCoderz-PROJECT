@@ -6,6 +6,7 @@ from django.contrib import messages
 import logging
 
 
+
 # Create your views here.
 logger = logging.getLogger('django')
          
@@ -75,3 +76,5 @@ def Logout(request):
     except:
         pass
     return redirect('/')
+
+

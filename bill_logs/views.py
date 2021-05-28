@@ -2,6 +2,13 @@ from bill_logs.models import Export, imported
 from django.shortcuts import redirect, render
 from bill_logs.models import Export,imported
 import logging
+from django.http import HttpResponse
+from django.views.generic import View
+from bill_logs.utils import render_to_pdf 
+
+import datetime
+
+
 # Create your views here.
 logger = logging.getLogger('django')
 #showing Export bills
@@ -45,4 +52,15 @@ def update(request, id):
     jais=Export(id=id,billing_amt=billing_amt,date_of_export=date_of_export,gst_imposed=gst_imposed,exported_to=exported_to,order_ID=order_ID,quantity=quantity,estimated_time=estimated_time)
     jais.save()
     return redirect('/exports/')
+
+class GeneratePdf(View):
+    def get(self, request, *args, **kwargs):
+        data = {
+             'today': datetime.date.today(), 
+             'amount': 39.99,
+            'customer_name': 'Cooper Mann',
+            'order_id': 1233434,
+        }
+        pdf = render_to_pdf('invoice.html', data)
+        return HttpResponse(pdf, content_type='application/pdf')    
        

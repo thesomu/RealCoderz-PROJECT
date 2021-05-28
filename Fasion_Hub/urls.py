@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from billing_details.views import login,billing_view,show,destroy,dashboard,Logout
-from bill_logs.views import shows,destroys,destroyss,showss,edit,update
+from bill_logs.views import shows,destroys,destroyss,showss,edit,update,GeneratePdf
 
 
 urlpatterns = [
@@ -33,6 +33,7 @@ urlpatterns = [
     path('update/<int:id>',update),
     path('dashboard/',dashboard), 
     path('logout',Logout),
+    path('pdf/',GeneratePdf.as_view()),
     
       
     
