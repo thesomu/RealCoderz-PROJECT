@@ -1,0 +1,4 @@
+2021-05-28 11:29:14,783:INFO:session created and login successful
+2021-05-28 11:29:57,650:INFO:Invalid Credentials
+2021-05-28 11:31:39,248:INFO:C:\Users\Somnath\PycharmProjects\djangoProject1\djangoProject1\settings.py changed, reloading.
+2021-05-28 11:31:39,249:DEBUG:Using proactor: IocpProactor

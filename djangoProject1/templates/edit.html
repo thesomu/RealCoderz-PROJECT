@@ -1,6 +1,23 @@
 {% extends 'theme.html' %}
 
 {% block content %}
+         <nav aria-label="breadcrumb">
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-md-12">
+                    <ol class="breadcrumb">
+                        You are here:
+                        &nbsp
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="login">Sign In</a></li>
+                        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="/profile">Details</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Edit</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </nav>
 <form action="/update/{{ ship.id }}" method="post">
                         {% csrf_token %}
             <table align="center">
