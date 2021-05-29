@@ -64,11 +64,12 @@ input[type="text"]::placeholder {
 
 div#three {
   position: absolute;
+  white-space: nowrap;
   top: 24%;
   left: 76.5%;
 }
 div#three label {
-  margin-left: 60px;
+  margin-left: 10px;
   font-size: 20px;
 }
 div#three input {
@@ -103,6 +104,10 @@ select {
   text-align: center;
 }
 
+select:hover{
+  background-color: #036ac2;
+}
+
 div#six label {
   margin-left: 50%;
   font-size: 20px;
@@ -129,7 +134,8 @@ button.btn-primary {
 }
 
 button.btn:hover {
-  background-color: blue;
+  background-color: #036ac2;
+  border: 2px solid black;
 }
 
 input.form-control {

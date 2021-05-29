@@ -48,14 +48,16 @@
                   class="dropdown-menu dropdown"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <li><a class="dropdown-item" href="#">View Companies</a></li>
+                  <li><a class="dropdown-item" href="/viewCompanies">View Companies</a></li>
                   <li>
                     <a class="dropdown-item" href="/displayOrders"
                       >View Import Orders</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">View Export Orders</a>
+                    <a class="dropdown-item" href="/login"
+                      >Back to menu</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -97,11 +99,11 @@
                 id="date"
                 name="orderdate"
                 placeholder="YYYY-MM-DD"
-                value="{{orders.order_date}}"
+                value="{{orders.order_date|date:"Y-m-d"}}"
               />
             </div>
             <div id="three">
-              <label for="country" class="form-label">Country</label>
+              <label for="country" class="form-label">Exporter's Country</label>
               <input
                 type="text"
                 class="form-control"

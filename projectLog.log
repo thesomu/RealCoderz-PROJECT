@@ -634,3 +634,484 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'menu' not found. 'menu' is n
 2021-05-29 05:58:01,647 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/Import/views.py changed, reloading.
 2021-05-29 05:58:01,647 asyncio      DEBUG    Using selector: EpollSelector
 2021-05-29 05:58:02,103 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:01:18,913 Import.views INFO     Inside portalLogin_view
+2021-05-29 06:01:18,913 Import.views INFO     User authenticated and request sent to next page
+2021-05-29 06:03:27,298 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/menuPage.html changed, reloading.
+2021-05-29 06:03:27,299 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:03:27,650 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:03:31,567 Import.views INFO     Inside portalLogin_view
+2021-05-29 06:03:31,567 Import.views INFO     User authenticated and request sent to next page
+2021-05-29 06:03:32,039 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:04:00,386 Import.views INFO     Inside import_view
+2021-05-29 06:04:00,388 Import.views DEBUG    User session successful
+2021-05-29 06:04:00,388 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:04:24,397 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/importPage.html changed, reloading.
+2021-05-29 06:04:24,397 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:04:24,760 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:04:28,080 Import.views INFO     Inside import_view
+2021-05-29 06:04:28,082 Import.views DEBUG    User session successful
+2021-05-29 06:04:28,083 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:04:28,288 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:07:12,497 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/importPage.html changed, reloading.
+2021-05-29 06:07:12,497 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:07:12,897 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:07:15,106 Import.views INFO     Inside import_view
+2021-05-29 06:07:15,110 Import.views DEBUG    User session successful
+2021-05-29 06:07:15,110 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:07:15,251 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:07:54,550 Import.views INFO     Inside import_view
+2021-05-29 06:07:54,553 Import.views DEBUG    User session successful
+2021-05-29 06:07:54,554 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:07:54,667 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:09:04,253 Import.views INFO     Inside import_view
+2021-05-29 06:09:04,255 Import.views DEBUG    User session successful
+2021-05-29 06:09:04,255 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:09:04,369 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:09:14,652 Import.views INFO     Inside import_view
+2021-05-29 06:09:14,654 Import.views DEBUG    User session successful
+2021-05-29 06:09:14,655 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:09:14,756 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:09:24,905 Import.views INFO     Inside import_view
+2021-05-29 06:09:24,908 Import.views DEBUG    User session successful
+2021-05-29 06:09:24,908 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:09:25,030 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:09:33,885 Import.views INFO     Inside import_view
+2021-05-29 06:09:33,889 Import.views DEBUG    User session successful
+2021-05-29 06:09:33,889 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:09:34,000 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:09:42,224 Import.views INFO     Inside import_view
+2021-05-29 06:09:42,227 Import.views DEBUG    User session successful
+2021-05-29 06:09:42,227 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:09:42,336 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:09:48,633 Import.views INFO     Inside import_view
+2021-05-29 06:09:48,637 Import.views DEBUG    User session successful
+2021-05-29 06:09:48,637 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:09:48,780 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:11:07,572 Import.views INFO     Inside import_view
+2021-05-29 06:11:07,575 Import.views DEBUG    User session successful
+2021-05-29 06:11:07,576 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:11:07,688 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:11:49,901 Import.views INFO     Inside import_view
+2021-05-29 06:11:49,904 Import.views DEBUG    User session successful
+2021-05-29 06:11:49,904 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:11:50,026 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:12:17,575 Import.views INFO     Inside import_view
+2021-05-29 06:12:17,577 Import.views DEBUG    User session successful
+2021-05-29 06:12:17,578 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:12:17,681 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:12:50,868 Import.views INFO     Inside import_view
+2021-05-29 06:12:50,870 Import.views DEBUG    User session successful
+2021-05-29 06:12:50,870 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:12:50,979 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:13:06,994 Import.views INFO     Inside import_view
+2021-05-29 06:13:06,996 Import.views DEBUG    User session successful
+2021-05-29 06:13:06,996 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:13:07,129 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:14:12,992 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/importPage.html changed, reloading.
+2021-05-29 06:14:12,992 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:14:13,331 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:14:27,149 Import.views INFO     Inside import_view
+2021-05-29 06:14:27,152 Import.views DEBUG    User session successful
+2021-05-29 06:14:27,152 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:14:27,271 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:14:38,488 Import.views INFO     Inside import_view
+2021-05-29 06:14:38,490 Import.views DEBUG    User session successful
+2021-05-29 06:14:38,490 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:14:38,632 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:14:52,823 Import.views INFO     Inside import_view
+2021-05-29 06:14:52,825 Import.views DEBUG    User session successful
+2021-05-29 06:14:52,825 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:14:52,961 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:15:36,113 Import.views INFO     Inside import_view
+2021-05-29 06:15:36,116 Import.views DEBUG    User session successful
+2021-05-29 06:15:36,116 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:15:36,262 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:16:29,106 Import.views INFO     Inside import_view
+2021-05-29 06:16:29,109 Import.views DEBUG    User session successful
+2021-05-29 06:16:29,110 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:16:29,213 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:16:44,996 Import.views INFO     Inside import_view
+2021-05-29 06:16:44,999 Import.views DEBUG    User session successful
+2021-05-29 06:16:44,999 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:16:45,115 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:17:12,484 Import.views INFO     Inside import_view
+2021-05-29 06:17:12,487 Import.views DEBUG    User session successful
+2021-05-29 06:17:12,487 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:17:12,607 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:18:18,830 Import.views INFO     Inside import_view
+2021-05-29 06:18:18,833 Import.views DEBUG    User session successful
+2021-05-29 06:18:18,834 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:18:18,950 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:18:29,509 Import.views INFO     Inside import_view
+2021-05-29 06:18:29,512 Import.views DEBUG    User session successful
+2021-05-29 06:18:29,513 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:18:29,612 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:19:04,078 Import.views INFO     Inside import_view
+2021-05-29 06:19:04,081 Import.views DEBUG    User session successful
+2021-05-29 06:19:04,081 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:19:04,184 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:19:42,071 Import.views INFO     Inside insertImportOrder_view
+2021-05-29 06:19:42,074 Import.views DEBUG    User session successful
+2021-05-29 06:19:42,232 Import.views INFO     Record inserted in database successfully and request redirected to display orders page.
+2021-05-29 06:19:42,243 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:19:42,247 Import.views DEBUG    User session successful
+2021-05-29 06:19:42,247 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:20:51,118 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/importOrders.html changed, reloading.
+2021-05-29 06:20:51,119 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:20:51,617 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:20:52,509 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:20:52,516 Import.views DEBUG    User session successful
+2021-05-29 06:20:52,516 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:20:52,638 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:20:56,460 Import.views INFO     Inside import_view
+2021-05-29 06:20:56,464 Import.views DEBUG    User session successful
+2021-05-29 06:20:56,527 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:21:32,250 Import.views INFO     Inside import_view
+2021-05-29 06:21:32,254 Import.views DEBUG    User session successful
+2021-05-29 06:21:32,361 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:21:50,680 Import.views INFO     Inside import_view
+2021-05-29 06:21:50,683 Import.views DEBUG    User session successful
+2021-05-29 06:21:50,789 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:22:05,912 Import.views INFO     Inside import_view
+2021-05-29 06:22:05,915 Import.views DEBUG    User session successful
+2021-05-29 06:22:06,025 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:23:03,005 Import.views INFO     Inside import_view
+2021-05-29 06:23:03,008 Import.views DEBUG    User session successful
+2021-05-29 06:23:03,118 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:23:26,166 Import.views INFO     Inside import_view
+2021-05-29 06:23:26,168 Import.views DEBUG    User session successful
+2021-05-29 06:23:26,281 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:23:40,491 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:23:40,494 Import.views DEBUG    User session successful
+2021-05-29 06:23:40,495 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:23:40,560 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:24:01,430 Import.views DEBUG    User session successful
+2021-05-29 06:24:01,431 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:24:01,432 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:25:42,415 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/importPage.html changed, reloading.
+2021-05-29 06:25:42,416 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:25:42,798 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:26:25,351 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/editImportPage.html changed, reloading.
+2021-05-29 06:26:25,351 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:26:25,695 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:26:43,165 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:26:43,169 Import.views DEBUG    User session successful
+2021-05-29 06:26:43,169 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:26:48,585 Import.views DEBUG    User session successful
+2021-05-29 06:26:48,585 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:26:48,587 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:28:36,181 Import.views DEBUG    User session successful
+2021-05-29 06:28:36,181 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:28:36,183 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:28:36,290 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:28:47,177 Import.views INFO     Inside displayCompanies_view
+2021-05-29 06:28:47,180 Import.views DEBUG    User session successful
+2021-05-29 06:28:47,180 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-29 06:28:47,243 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:28:51,848 Import.views INFO     Inside import_view
+2021-05-29 06:28:51,850 Import.views DEBUG    User session successful
+2021-05-29 06:28:55,209 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:28:55,212 Import.views DEBUG    User session successful
+2021-05-29 06:28:55,212 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:28:58,816 Import.views INFO     Inside import_view
+2021-05-29 06:28:58,819 Import.views DEBUG    User session successful
+2021-05-29 06:29:01,699 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:29:01,703 Import.views DEBUG    User session successful
+2021-05-29 06:29:01,703 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:29:03,094 Import.views DEBUG    User session successful
+2021-05-29 06:29:03,095 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:29:03,096 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:29:16,715 Import.views DEBUG    User session successful
+2021-05-29 06:29:16,716 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:29:16,717 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:29:16,818 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:29:20,983 Import.views DEBUG    User session successful
+2021-05-29 06:29:20,983 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:29:20,985 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:29:21,085 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:29:48,761 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/editImportPage.html changed, reloading.
+2021-05-29 06:29:48,761 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:29:49,141 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:29:50,183 Import.views DEBUG    User session successful
+2021-05-29 06:29:50,183 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:29:50,184 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:29:50,320 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:30:15,132 Import.views INFO     Inside updateImportOrders_view
+2021-05-29 06:30:15,135 Import.views DEBUG    User session successful
+2021-05-29 06:30:15,309 django.request ERROR    Internal Server Error: /update/19
+Traceback (most recent call last):
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/harsh/.virtualenvs/teamProject/src/Import/views.py", line 145, in updateImportOrders_view
+    order.save()
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/base.py", line 845, in _save_table
+    updated = self._do_update(base_qs, using, pk_val, values, update_fields,
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/base.py", line 899, in _do_update
+    return filtered._update(values) > 0
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/query.py", line 802, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1162, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1525, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1271, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1266, in get_prep_value
+    return self.to_python(value)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1238, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“May 29, 2021” value has an invalid date format. It must be in YYYY-MM-DD format.']
+2021-05-29 06:30:22,540 Import.views INFO     Inside updateImportOrders_view
+2021-05-29 06:30:22,543 Import.views DEBUG    User session successful
+2021-05-29 06:30:22,596 django.request ERROR    Internal Server Error: /update/19
+Traceback (most recent call last):
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/harsh/.virtualenvs/teamProject/src/Import/views.py", line 145, in updateImportOrders_view
+    order.save()
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/base.py", line 845, in _save_table
+    updated = self._do_update(base_qs, using, pk_val, values, update_fields,
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/base.py", line 899, in _do_update
+    return filtered._update(values) > 0
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/query.py", line 802, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1559, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1162, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1525, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1271, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1266, in get_prep_value
+    return self.to_python(value)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1238, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“May 29, 2021” value has an invalid date format. It must be in YYYY-MM-DD format.']
+2021-05-29 06:32:19,952 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/editImportPage.html changed, reloading.
+2021-05-29 06:32:19,952 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:32:20,776 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:32:28,045 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/importPage.html changed, reloading.
+2021-05-29 06:32:28,045 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:32:28,409 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:32:35,021 Import.views DEBUG    User session successful
+2021-05-29 06:32:35,021 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:32:35,022 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:32:35,156 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:33:01,613 Import.views INFO     Inside updateImportOrders_view
+2021-05-29 06:33:01,616 Import.views DEBUG    User session successful
+2021-05-29 06:33:01,782 Import.views INFO     Record with id: 19 updated successfully and request redirected to the displayOrders page.
+2021-05-29 06:33:01,796 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:33:01,799 Import.views DEBUG    User session successful
+2021-05-29 06:33:01,799 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:33:03,966 Import.views DEBUG    User session successful
+2021-05-29 06:33:03,966 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:33:03,968 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:33:20,145 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/editImportPage.html changed, reloading.
+2021-05-29 06:33:20,146 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:33:20,501 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:33:21,713 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/editImportPage.html changed, reloading.
+2021-05-29 06:33:21,714 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:33:22,065 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:33:22,450 Import.views DEBUG    User session successful
+2021-05-29 06:33:22,450 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:33:22,451 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:33:22,557 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:33:25,364 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/editImportPage.html changed, reloading.
+2021-05-29 06:33:25,365 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:33:25,717 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:34:16,783 Import.views DEBUG    User session successful
+2021-05-29 06:34:16,783 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:34:16,785 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:34:16,908 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:34:33,524 Import.views INFO     Inside updateImportOrders_view
+2021-05-29 06:34:33,527 Import.views DEBUG    User session successful
+2021-05-29 06:34:33,529 Import.views INFO     Record with id: 19 updated successfully and request redirected to the displayOrders page.
+2021-05-29 06:34:33,545 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:34:33,548 Import.views DEBUG    User session successful
+2021-05-29 06:34:33,548 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:34:40,000 Import.views INFO     Inside displayCompanies_view
+2021-05-29 06:34:40,002 Import.views DEBUG    User session successful
+2021-05-29 06:34:40,002 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-29 06:34:40,061 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:34:56,751 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/viewCompanies.html changed, reloading.
+2021-05-29 06:34:56,752 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:34:57,115 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:34:58,413 Import.views INFO     Inside displayCompanies_view
+2021-05-29 06:34:58,417 Import.views DEBUG    User session successful
+2021-05-29 06:34:58,417 Import.views INFO     Record fetched successfully and request redirected to viewCompanies page.
+2021-05-29 06:34:58,520 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:35:03,793 Import.views INFO     Inside import_view
+2021-05-29 06:35:03,797 Import.views DEBUG    User session successful
+2021-05-29 06:35:10,080 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:35:10,083 Import.views DEBUG    User session successful
+2021-05-29 06:35:10,083 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:35:33,080 Import.views INFO     Inside logout_view
+2021-05-29 06:35:33,084 Import.views INFO     Logout successful and request redirected to login dashboard
+2021-05-29 06:35:33,166 Import.views INFO     Main Dashboard page is requested
+2021-05-29 06:35:33,262 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:36:59,604 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/fashionHub/urls.py changed, reloading.
+2021-05-29 06:36:59,604 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:37:00,130 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:40:11,979 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/Import/models.py changed, reloading.
+2021-05-29 06:40:11,980 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:40:12,430 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:42:29,862 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/editImportPage.html changed, reloading.
+2021-05-29 06:42:29,863 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:42:30,203 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:42:36,070 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:42:41,588 Import.views INFO     Main Dashboard page is requested
+2021-05-29 06:43:00,628 Import.views INFO     Inside portalLogin_view
+2021-05-29 06:43:00,628 Import.views INFO     User authenticated and request sent to next page
+2021-05-29 06:43:00,869 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:44:15,422 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/menuPage.html changed, reloading.
+2021-05-29 06:44:15,422 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:44:15,786 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:44:18,755 Import.views INFO     Inside portalLogin_view
+2021-05-29 06:44:18,755 Import.views INFO     User authenticated and request sent to next page
+2021-05-29 06:44:18,957 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:44:22,627 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:44:22,630 Import.views DEBUG    User session successful
+2021-05-29 06:44:22,630 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:44:24,004 Import.views DEBUG    User session successful
+2021-05-29 06:44:24,005 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:44:24,006 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:44:24,147 django.request ERROR    Internal Server Error: /edit/19
+Traceback (most recent call last):
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/harsh/.virtualenvs/teamProject/src/Import/views.py", line 124, in editImportOrders_view
+    return render(request, 'editImportPage.html', {'orders': orders})
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/base.py", line 657, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/home/harsh/.virtualenvs/teamProject/lib/python3.8/site-packages/django/template/base.py", line 569, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'order_date'
+2021-05-29 06:44:38,305 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/editImportPage.html changed, reloading.
+2021-05-29 06:44:38,306 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:44:38,687 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 06:44:40,882 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:44:40,885 Import.views DEBUG    User session successful
+2021-05-29 06:44:40,885 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:44:41,014 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:44:42,049 Import.views DEBUG    User session successful
+2021-05-29 06:44:42,049 Import.views INFO     Inside editImportOrders_view
+2021-05-29 06:44:42,050 Import.views INFO     Record fetched on the basis of id: 19 and request redirected to editImportPage
+2021-05-29 06:44:49,966 Import.views INFO     Inside updateImportOrders_view
+2021-05-29 06:44:49,968 Import.views DEBUG    User session successful
+2021-05-29 06:44:49,970 Import.views INFO     Record with id: 19 updated successfully and request redirected to the displayOrders page.
+2021-05-29 06:44:49,987 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:44:49,989 Import.views DEBUG    User session successful
+2021-05-29 06:44:49,990 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:44:59,613 Import.views INFO     Inside import_view
+2021-05-29 06:44:59,616 Import.views DEBUG    User session successful
+2021-05-29 06:44:59,682 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:45:04,616 Import.views INFO     Inside logout_view
+2021-05-29 06:45:04,618 Import.views INFO     Logout successful and request redirected to login dashboard
+2021-05-29 06:45:04,754 Import.views INFO     Main Dashboard page is requested
+2021-05-29 06:45:04,804 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:49:33,554 Import.views INFO     Inside portalLogin_view
+2021-05-29 06:49:33,554 Import.views INFO     User authenticated and request sent to next page
+2021-05-29 06:49:33,877 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 06:50:16,189 Import.views INFO     Inside import_view
+2021-05-29 06:50:16,191 Import.views DEBUG    User session successful
+2021-05-29 06:50:16,191 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 06:50:19,499 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 06:50:19,502 Import.views DEBUG    User session successful
+2021-05-29 06:50:19,502 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 06:50:34,407 Import.views INFO     Inside logout_view
+2021-05-29 06:50:34,410 Import.views INFO     Logout successful and request redirected to login dashboard
+2021-05-29 06:50:34,481 Import.views INFO     Main Dashboard page is requested
+2021-05-29 06:57:28,927 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/importPage.html changed, reloading.
+2021-05-29 06:57:28,927 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 06:57:29,748 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 07:02:38,722 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/importPage.html changed, reloading.
+2021-05-29 07:02:38,723 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 07:02:39,090 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 07:03:29,735 Import.views INFO     Inside portalLogin_view
+2021-05-29 07:03:29,735 Import.views INFO     User authenticated and request sent to next page
+2021-05-29 07:03:40,506 Import.views INFO     Inside import_view
+2021-05-29 07:03:40,512 Import.views DEBUG    User session successful
+2021-05-29 07:03:40,513 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 07:03:44,556 Import.views INFO     Inside import_view
+2021-05-29 07:03:44,558 Import.views DEBUG    User session successful
+2021-05-29 07:03:48,122 Import.views INFO     Inside import_view
+2021-05-29 07:03:48,124 Import.views DEBUG    User session successful
+2021-05-29 07:05:16,784 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/importPage.html changed, reloading.
+2021-05-29 07:05:16,785 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 07:05:17,167 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 07:05:28,843 Import.views INFO     Inside import_view
+2021-05-29 07:05:28,846 Import.views DEBUG    User session successful
+2021-05-29 07:05:28,987 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 07:05:33,367 Import.views INFO     Inside portalLogin_view
+2021-05-29 07:05:33,368 Import.views WARNING  Post method not used and request redirected 
+2021-05-29 07:06:33,664 Import.views INFO     Inside portalLogin_view
+2021-05-29 07:06:33,664 Import.views INFO     User authenticated and request sent to next page
+2021-05-29 07:06:44,045 Import.views INFO     Inside import_view
+2021-05-29 07:06:44,047 Import.views DEBUG    User session successful
+2021-05-29 07:06:44,047 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 07:06:51,901 Import.views INFO     Inside displayImportOrders_view
+2021-05-29 07:06:51,905 Import.views DEBUG    User session successful
+2021-05-29 07:06:51,905 Import.views INFO     Record fetched successfully and request redirected to importOrders page.
+2021-05-29 07:07:21,635 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/editImportPage.html changed, reloading.
+2021-05-29 07:07:21,636 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 07:07:22,031 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 07:07:34,326 django.utils.autoreload INFO     /home/harsh/.virtualenvs/teamProject/src/templates/importOrders.html changed, reloading.
+2021-05-29 07:07:34,326 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 07:07:34,679 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-29 07:08:12,226 Import.views INFO     Inside logout_view
+2021-05-29 07:08:12,229 Import.views INFO     Logout successful and request redirected to login dashboard
+2021-05-29 07:08:12,311 Import.views INFO     Main Dashboard page is requested
+2021-05-29 07:08:16,649 Import.views INFO     Main Dashboard page is requested
+2021-05-29 07:08:36,873 Import.views INFO     Inside portalLogin_view
+2021-05-29 07:08:36,874 Import.views INFO     User authenticated and request sent to next page
+2021-05-29 07:08:39,629 Import.views INFO     Inside import_view
+2021-05-29 07:08:39,633 Import.views DEBUG    User session successful
+2021-05-29 07:08:39,635 Import.views INFO     Request redirected to next page if the user selects import option from the menu
+2021-05-29 07:08:42,887 Import.views INFO     Inside logout_view
+2021-05-29 07:08:42,889 Import.views INFO     Logout successful and request redirected to login dashboard
+2021-05-29 07:08:43,042 Import.views INFO     Main Dashboard page is requested

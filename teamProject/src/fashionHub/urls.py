@@ -24,8 +24,8 @@ urlpatterns = [
     path('menu', import_view, name='importMain'),
     path('import', insertImportOrder_view, name="importOrder"),
     path('displayOrders', displayImportOrders_view, name='showOrders'),
-    path('edit/<int:id>',editImportOrders_view, name="editOrders"),
-    path('update/<int:id>',updateImportOrders_view, name="updateOrders"),
-    path('delete/<int:id>',deleteImportOrders_view, name="deleteOrder"),
+    path('edit/<int:id>', editImportOrders_view, name="editOrders"),
+    path('update/<int:id>', updateImportOrders_view, name="updateOrders"),
+    path('delete/<int:id>', deleteImportOrders_view, name="deleteOrder"),
     path('viewCompanies', displayCompanies_view, name="viewCompanies")
 ]
