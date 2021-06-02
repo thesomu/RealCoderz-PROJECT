@@ -47,12 +47,12 @@
                 >
                   <li><a class="dropdown-item" href="/viewCompanies">View Companies</a></li>
                   <li>
-                    <a class="dropdown-item" href="/menu">
+                    <a class="dropdown-item" href="/import">
                       Insert Import Orders</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/login"
+                    <a class="dropdown-item" href="/menu"
                       >Back to menu</a
                     >
                   </li>
@@ -90,10 +90,10 @@
             <td>{{orders.total_cost}}</td>
             <td>{{orders.status_of_import}}</td>
             <td>
-              <a href="/edit/{{ orders.id }}">Edit</a>
+              <a href="/editImportOrder/{{ orders.id }}">Edit</a>
             </td>
             <td>
-              <a href="/delete/{{ orders.id }}">Delete</a>
+              <a href="/deleteImportOrder/{{ orders.id }}">Delete</a>
             </td>
           </tr>
           {% endfor %}

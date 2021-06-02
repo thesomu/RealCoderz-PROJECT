@@ -55,7 +55,12 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/login"
+                    <a class="dropdown-item" href="/import"
+                      >Insert Import Order</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/menu"
                       >Back to menu</a
                     >
                   </li>
@@ -78,7 +83,7 @@
           <h3>Edit Import Order</h3>
         </div>
         <div class="col-6" id="right">
-          <form action="/update/{{orders.id}}" method="POST">
+          <form action="/updateImportOrder/{{orders.id}}" method="POST">
             {% csrf_token %}
             <div class="mb-3" id="one">
               <label for="id" class="form-label">Order ID</label>

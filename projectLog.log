@@ -1115,3 +1115,7 @@ django.template.exceptions.TemplateSyntaxError: Invalid filter: 'order_date'
 2021-05-29 07:08:42,887 Import.views INFO     Inside logout_view
 2021-05-29 07:08:42,889 Import.views INFO     Logout successful and request redirected to login dashboard
 2021-05-29 07:08:43,042 Import.views INFO     Main Dashboard page is requested
+2021-05-29 09:42:47,524 Import.views INFO     Main Dashboard page is requested
+2021-05-29 09:42:47,689 django.request WARNING  Not Found: /favicon.ico
+2021-05-29 09:43:06,277 asyncio      DEBUG    Using selector: EpollSelector
+2021-05-29 09:43:06,391 asyncio      DEBUG    Using selector: EpollSelector

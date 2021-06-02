@@ -60,7 +60,7 @@ def import_view(request):
                     "Request redirected to next page if the user selects import option from the menu")
                 return render(request, "importPage.html")
         else:
-            return render(request, 'importPage.html')
+            return render(request, 'menuPage.html')
 
     else:
         logger.warn(
@@ -89,6 +89,8 @@ def insertImportOrder_view(request):
             logger.info(
                 "Record inserted in database successfully and request redirected to display orders page.")
             return redirect('/displayOrders')
+        else:
+            return render(request, 'importPage.html')
 
     else:
         logger.warn(
