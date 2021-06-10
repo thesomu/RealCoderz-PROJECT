@@ -11,5 +11,9 @@ urlpatterns = [
     path("logout", views.logout, name="logout"),
     path("team", views.team, name="team"),
     path("achievements", views.achievements, name="achievements"),
-    path("adventures", views.adventures, name="adventures")
+    path("adventures", views.adventures, name="adventures"),
+    path("attendanceIn", views.attendanceIn, name="attendanceIn"),
+    path("attendanceOut", views.attendanceOut, name="attendanceOut"),
+    path("attendance", views.attendanceDetails, name="attendance"),
+    path("HRattendance", views.HRAttendanceDetails, name="HRattendance")
 ]

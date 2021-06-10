@@ -1,3 +1,6 @@
 from django.contrib import admin
+from Management.models import *
 
-# Register your models here.
+admin.site.register(dailyAttendance)
+admin.site.register(empAttendance)
+admin.site.register(totalAttendance)

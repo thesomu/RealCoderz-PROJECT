@@ -1,11 +1,15 @@
+from datetime import datetime
+
 from django.contrib import auth, messages
 from django.shortcuts import render, redirect
 
 from Employee.models import empTable
+from Management.models import dailyAttendance, empAttendance, totalAttendance
 
 import logging
 
 logging.basicConfig(filename='logfile.log', level=logging.DEBUG, format='%(asctime)s:%(levelname)s:%(message)s')
+
 
 def base(request):
     return render(request, 'Base.html')
@@ -104,3 +108,66 @@ def achievements(request):
 
 def adventures(request):
     return render(request, 'Adventures.html')
+
+
+def attendanceIn(request):
+    id2 = request.POST['id']
+    emp = empTable.objects.get(id=id2)
+    daily = dailyAttendance.objects.get(empId=id2)
+    inTime = request.POST['in']
+    outTime = daily.outTime
+    last = datetime.strptime(daily.inTime, "%Y-%m-%d %H:%M:%S")
+    print(datetime.date(datetime.today()))
+    if datetime.date(last) <= datetime.date(datetime.today()) or daily.inTime == 'null':
+        attendance = dailyAttendance(id=daily.id, empId=emp, inTime=inTime, outTime=outTime)
+        attendance.save()
+    return redirect('empdashboard')
+
+
+def attendanceOut(request):
+    id2 = request.POST['id']
+    emp = empTable.objects.get(id=id2)
+    daily = dailyAttendance.objects.get(empId=id2)
+    inTime = daily.inTime
+    outTime = request.POST['out']
+    currentIn = datetime.strptime(inTime, "%Y-%m-%d %H:%M:%S")
+    currentOut = datetime.strptime(outTime, "%Y-%m-%d %H:%M:%S")
+    currentInDate = datetime.date(currentIn)
+    currentOutDate = datetime.date(currentOut)
+    print(currentOut.month)
+    if currentInDate == currentOutDate:
+        attendance = dailyAttendance(id=daily.id, empId=emp, inTime=inTime, outTime=outTime)
+        attendance.save()
+
+        empAtt = empAttendance.objects.get(empId=id2)
+        dayOne = empAtt.dayOne
+        dayTwo = empAtt.dayTwo
+        dayThree = empAtt.dayThree
+        if currentOutDate.day == 3:
+            dayThree = (currentOut - currentIn).total_seconds() / 3600
+            print(dayThree)
+        EmpAtt = empAttendance(id=empAtt.id, empId=emp, dayOne=dayOne, dayTwo=dayTwo, dayThree=dayThree)
+        EmpAtt.save()
+
+        totalAtt = totalAttendance.objects.get(empId=id2)
+        May = totalAtt.May
+        June = totalAtt.June
+        July = totalAtt.July
+        if currentOutDate.month == 6:
+            June = (dayOne + dayTwo + dayThree) / 8
+        TotalAtt = totalAttendance(id=totalAtt.id, empId=emp, May=May, June=June, July=July)
+        TotalAtt.save()
+    return redirect('empdashboard')
+
+
+def attendanceDetails(request):
+    id2 = request.POST['id']
+    attendance = empAttendance.objects.filter(empId=id2)
+    logging.info('Getting employees attendance')
+    return render(request, 'EmployeeAttendance.html', {'details': attendance})
+
+
+def HRAttendanceDetails(request):
+    attendance = totalAttendance.objects.all()
+    logging.info('Getting all employees attendance')
+    return render(request, 'HRAttendance.html', {'details': attendance})

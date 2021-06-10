@@ -27,16 +27,6 @@
     .nav-custom{
         background-color: #9b59b6;
     }
-
-
-
-
-
-
-
-
-
-
     </style>
 </head>
 <body>
@@ -68,21 +58,53 @@
     </div>
     <div>
         <div style="float:left">
-            <form action="{% url 'edit' %}" method="post">
+            <form action="employeeEdit" method="post">
                 {% csrf_token %}
                 <input name="id" type="number" style="height:0;width:0;padding:0;border:none"
                        value={{employee.id}}>
-                <input type="submit" value="Update">
+                <div class="button">
+                    <input type="submit" value="Update" style="padding-left: 15px; padding-right: 15px;">
+                </div>
             </form>
         </div>
-        <div>
-            <form action="#" method="post">
+        <div style="float:left; padding-left: 15px;">
+            <form action="attendance" method="post">
                 {% csrf_token %}
                 <input name="id" type="number" style="height:0;width:0;padding:0;border:none"
                        value={{employee.id}}>
-                <input type="submit" value="Attendance">
+                <div class="button">
+                    <input type="submit" value="Attendance" style="padding-left: 15px; padding-right: 15px;">
+                </div>
             </form>
         </div>
+        <div style="float:left; padding-left: 15px;">
+            <form action="attendanceIn" method="post">
+                {% csrf_token %}
+                <input name="id" type="number" style="height:0;width:0;padding:0;border:none" value={{employee.id}}>
+                <input name="in" type="text" size="12" id="currentDateTime" readonly>
+                <div class="button">
+                    <input type="submit" value="IN Time" style="padding-left: 15px; padding-right: 15px;">
+                </div>
+            </form>
+        </div>
+        <div style="float:left; padding-left: 15px;">
+            <form action="attendanceOut" method="post">
+                {% csrf_token %}
+                <input name="id" type="number" style="height:0;width:0;padding:0;border:none" value={{employee.id}}>
+                <input name="out" type="text" size="12" id="currentDateTime2">
+                <div class="button">
+                    <input type="submit" value="OUT Time" style="padding-left: 15px; padding-right: 15px;">
+                </div>
+            </form>
+        </div>
+        <script>
+            var today = new Date();
+            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            var dateTime = date+' '+time;
+            document.getElementById("currentDateTime").value = dateTime;
+            document.getElementById("currentDateTime2").value = dateTime;
+        </script>
     </div>
 </div>
 </body>

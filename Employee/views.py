@@ -1,9 +1,12 @@
+from datetime import datetime
+
 from django.conf import settings
 from django.contrib import auth, messages
 from django.core.mail import send_mail
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from Employee.models import empTable
+from Management.models import *
 
 import logging
 
@@ -31,13 +34,19 @@ def register(request):
             emp = empTable(name=name, address=address, phone=phone, email=email, designation=designation,
                            password=password)
             emp.save()
-            logging.info('Employee registered successfuuly')
+            daily = dailyAttendance(empId=emp)
+            daily.save()
+            empAtt = empAttendance(empId=emp)
+            empAtt.save()
+            total = totalAttendance(empId=emp)
+            total.save()
+            logging.info('Employee registered successfully')
 
-            subject = 'Welcome to Fashion HUB'
-            message = 'Hello Mr.Miss '+name+', thank you for registering in Fashion HUB.'
-            email_from = settings.EMAIL_HOST_USER
-            recipient_list = [email]
-            send_mail(subject, message, email_from, recipient_list)
+            # subject = 'Welcome to Fashion HUB'
+            # message = 'Hello Mr./Miss '+name+', thank you for registering in Fashion HUB.'
+            # email_from = settings.EMAIL_HOST_USER
+            # recipient_list = [email]
+            # send_mail(subject, message, email_from, recipient_list)
 
             return redirect('details')
         else:
@@ -84,18 +93,25 @@ def edit(request):
     return render(request, 'Update.html', {'employee': employee})
 
 
+def employeeEdit(request):
+    id2 = request.POST.get('id')
+    employee = empTable.objects.get(id=id2)
+    logging.info('Update the employee')
+    return render(request, 'EmployeeUpdate.html', {'employee': employee})
+
+
 """To update the employee details"""
 
 
 def update(request):
-    id2 = request.POST['id']   # primary key
+    id2 = request.POST['id']  # primary key
     name = request.POST['name']
     address = request.POST['address']
     phone = request.POST['phone']
     email = request.POST['email']
     designation = request.POST['designation']
-    print(type(designation))
-    password = phone
+    employee = empTable.objects.get(id=id2)
+    password = employee.password
 
     countAddress = address.count(',')
     countName = name.count(' ')
@@ -118,6 +134,39 @@ def update(request):
 
     emp = empTable.objects.all()
     return render(request, 'Details.html', {'details': emp})
+
+
+def employeeUpdate(request):
+    id2 = request.POST['id']  # primary key
+    name = request.POST['name']
+    address = request.POST['address']
+    phone = request.POST['phone']
+    email = request.POST['email']
+    employee = empTable.objects.get(id=id2)
+    designation = employee.designation
+    password = employee.password
+
+    countAddress = address.count(',')
+    countName = name.count(' ')
+
+    if countAddress >= 2 and countName > 0:
+        emp = empTable(id=id2, name=name, address=address, phone=phone, email=email, designation=designation,
+                       password=password)
+        emp.save()
+        logging.info('Employee updated successfully')
+        return render(request, 'EmployeeProfile.html', {'employee': employee})
+    else:
+        if countName < 1:
+            logging.error('Error in updating employee name')
+            messages.error(request, 'Name should have first and last name')
+        if countAddress < 2:
+            logging.error('Error in updating employee address')
+            messages.error(request, 'Address should have society, city and pin code')
+        employee = empTable.objects.get(id=id2)
+        return render(request, 'EmployeeUpdate.html', {'employee': employee})
+
+    emp = empTable.objects.all()
+    return render(request, 'EmployeeProfile.html', {'employee': employee})
 
 
 """To delete an employee"""
